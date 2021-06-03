@@ -1,0 +1,406 @@
+---
+- hosts: localhost
+  #remote_user: root
+  #remote_user: vagrant
+  #remote_user: root
+  #become: yes
+  #become_method: sudo
+  vars:
+    keyname: 
+    keysecret: 
+    dns_server: 
+    zone: 
+    zone02: 
+
+    record01: 
+    value01: 
+
+    value02: 
+    record02: 
+
+    value03: 
+    record03: 
+
+    value04: 
+    record04: 
+
+    value05:
+    record05: 
+
+    value06: 
+    record06: 
+
+    value07: 
+    record07: 
+
+    value08: 
+    record08:
+
+    value09:
+    record09:
+
+    value10:
+    record10: 
+
+    value11: 
+    record11: 
+
+    value12:
+    record12: 
+
+    value13: 
+    record13: 
+
+    value14: 
+    record14: 
+
+    value15:
+    record15: 
+
+    value16: 
+    record16: 
+
+    value17: 
+    record17: 
+
+    value18: 
+    record18: 
+
+    value19: 
+    record19: 
+
+    value20: 
+    record20: 
+
+    value21:
+    record21: 
+
+    value22: 
+    record22:
+
+    value23: 
+    record23:
+
+  tasks:
+  #- name: upgrade all packages
+  #  package:
+  #    name: "*"
+  #    state: latest
+  - name: add A record 01
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record01 }}"
+      value: ["{{ value01 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 02
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record02 }}"
+      value: ["{{ value02 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 03
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record03 }}"
+      value: ["{{ value03 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 04
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record04 }}"
+      value: ["{{ value04 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 05
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record05 }}"
+      value: ["{{ value05 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 06
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record06 }}"
+      value: ["{{ value06 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 07
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record07 }}"
+      value: ["{{ value07 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 08
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record08 }}"
+      value: ["{{ value08 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 09
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record09 }}"
+      value: ["{{ value09 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 10
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record10 }}"
+      value: ["{{ value10 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 11
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone02 }}"
+      record: "{{ record11 }}"
+      value: ["{{ value11 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 12
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record12 }}"
+      value: ["{{ value12 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 13
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record13 }}"
+      value: ["{{ value13 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 14
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record14 }}"
+      value: ["{{ value14 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 15
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record15 }}"
+      value: ["{{ value15 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 16
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+      #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record16 }}"
+      value: ["{{ value16 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 17
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+    #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record17 }}"
+      value: ["{{ value17 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 18
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+     #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record18 }}"
+      value: ["{{ value18 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 19
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+    #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record19 }}"
+      value: ["{{ value19 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 20
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+     #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record20 }}"
+      value: ["{{ value20 }}"]
+      type: "A"
+      state: present
+
+  - name: add A record 21
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+     #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record21 }}"
+      value: ["{{ value21 }}"]
+      type: "A"
+      state: present
+
+
+  - name: add A record 22
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+     #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record22 }}"
+      value: ["{{ value22 }}"]
+      type: "A"
+      state: present
+
+  - name: add A record 23
+    community.general.nsupdate:
+      key_name: "{{ keyname }}"
+      key_secret: "{{ keysecret }}"
+     #key_algorithm: hmac-sha256
+      server: "{{ dns_server }}"
+      port: 5300
+      zone: "{{ zone }}"
+      record: "{{ record23 }}"
+      value: ["{{ value23 }}"]
+      type: "A"
+      state: present
